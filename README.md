@@ -17,7 +17,7 @@ kubectl get pods -n argocd
 
 ubuntu@ip-172-31-3-93:~/argocd$ kubectl get pod -n argocd  -o wide
 NAME                                                READY   STATUS    RESTARTS   AGE     IP           NODE                                        NOMINATED NODE   READINESS GATES
-argocd-application-controller-0                     1/1     Running   0          7m38s   10.0.2.247   ip-10-0-2-205.ap-south-1.compute.internal   <none>           <none>
+argocd-application-controller-0                     1/1     Running   0          7m38s   10.0.2.247   ip-10-0-2-205.ap-south-1.compute.internal   <none>           <none>\n
 argocd-applicationset-controller-54f96997f8-x96hf   1/1     Running   0          7m38s   10.0.1.100   ip-10-0-1-204.ap-south-1.compute.internal   <none>           <none>
 argocd-dex-server-798cbff4c7-knwcp                  1/1     Running   0          7m38s   10.0.1.88    ip-10-0-1-204.ap-south-1.compute.internal   <none>           <none>
 argocd-notifications-controller-644f66f7df-jb9qq    1/1     Running   0          7m38s   10.0.1.200   ip-10-0-1-204.ap-south-1.compute.internal   <none>           <none>

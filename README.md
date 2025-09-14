@@ -1,6 +1,7 @@
 # How to install ArgoCD.
 
 kubectl create namespace argocd
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 kubectl get netpol -n argocd
@@ -41,9 +42,10 @@ ip-10-0-1-204.ap-south-1.compute.internal   Ready    <none>   3h1m   v1.32.8-eks
 ip-10-0-2-205.ap-south-1.compute.internal   Ready    <none>   3h1m   v1.32.8-eks-99d6cc0   10.0.2.205    13.204.62.237   Amazon Linux 2023.8.20250818   6.1.147-172.266.amzn2023.x86_64   containerd://1.7.27
 
 accesss argocd with argocd server pod node and nodeport
+
 http://13.201.96.135:30128 or https://13.201.96.135:32311
 
-How to get argocd password:
+# How to get argocd password:
 
 kubectl get secrets -n argocd
 

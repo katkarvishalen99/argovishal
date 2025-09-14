@@ -76,6 +76,9 @@ use username as : admin for login
 
 
 
+[argocd install.docx](https://github.com/user-attachments/files/22319936/argocd.install.docx)
+
+
 
 
 

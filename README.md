@@ -71,6 +71,17 @@ WM7UxRElf1v3jPW2
 
 use username as : admin for login
 
+
+# ArgoCD CLI Install;
+
+curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+
+sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+
+rm argocd-linux-amd64
+
+argocd login 13.201.96.135:30128 --username admin
+
 <img width="1577" height="562" alt="image" src="https://github.com/user-attachments/assets/a956bba4-fafc-4d80-97e1-9b47102d8db0" />
 
 <img width="975" height="486" alt="image" src="https://github.com/user-attachments/assets/0e92faf2-a462-4380-846e-f181ec831f24" />

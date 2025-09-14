@@ -1,4 +1,4 @@
-#How to install ArgoCD.
+# How to install ArgoCD.
 
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
@@ -75,11 +75,11 @@ use username as : admin for login
 
 
 
-#Deploy Nginx with Argocd:
+# Deploy Nginx with Argocd:
 
 [argocd install.docx](https://github.com/user-attachments/files/22319936/argocd.install.docx)
 
-#Deploy postgresdb with ArgoCD
+# Deploy postgresdb with ArgoCD
 
 
 [Deploy postgresdb with ArgoCD.docx](https://github.com/user-attachments/files/22319984/Deploy.postgresdb.with.ArgoCD.docx)

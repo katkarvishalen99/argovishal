@@ -72,15 +72,7 @@ WM7UxRElf1v3jPW2
 use username as : admin for login
 
 
-# ArgoCD CLI Install;
 
-curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
-
-sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
-
-rm argocd-linux-amd64
-
-argocd login 13.201.96.135:30128 --username admin
 
 <img width="1577" height="562" alt="image" src="https://github.com/user-attachments/assets/a956bba4-fafc-4d80-97e1-9b47102d8db0" />
 
@@ -112,6 +104,17 @@ argocd login 13.201.96.135:30128 --username admin
 
 
 [Deploy postgresdb with ArgoCD.docx](https://github.com/user-attachments/files/22319984/Deploy.postgresdb.with.ArgoCD.docx)
+
+
+# ArgoCD CLI Install;
+
+curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
+
+sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
+
+rm argocd-linux-amd64
+
+argocd login 13.201.96.135:30128 --username admin
 
 
 

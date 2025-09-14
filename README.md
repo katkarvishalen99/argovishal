@@ -52,10 +52,15 @@ http://13.201.96.135:30128 or https://13.201.96.135:32311
 kubectl get secrets -n argocd
 
 ubuntu@ip-172-31-3-93:~/argocd$ kubectl get secrets -n argocd
+
 NAME                          TYPE     DATA   AGE
+
 argocd-initial-admin-secret   Opaque   1      153m
+
 argocd-notifications-secret   Opaque   0      154m
+
 argocd-redis                  Opaque   1      154m
+
 argocd-secret                 Opaque   5      154m
 
 ubuntu@ip-172-31-3-93:~/argocd$ kubectl get secrets -n argocd argocd-initial-admin-secret -o yaml | grep -i password

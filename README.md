@@ -34,4 +34,42 @@ ip-10-0-2-205.ap-south-1.compute.internal   Ready    <none>   3h1m   v1.32.8-eks
 accesss argocd with argocd server pod node and nodeport
 http://13.201.96.135:30128 or https://13.201.96.135:32311
 
+How to get argocd password:
+
+kubectl get secrets -n argocd
+
+ubuntu@ip-172-31-3-93:~/argocd$ kubectl get secrets -n argocd 
+NAME                          TYPE     DATA   AGE
+argocd-initial-admin-secret   Opaque   1      153m
+argocd-notifications-secret   Opaque   0      154m
+argocd-redis                  Opaque   1      154m
+argocd-secret                 Opaque   5      154m
+
+ubuntu@ip-172-31-3-93:~/argocd$ kubectl get secrets -n argocd argocd-initial-admin-secret -o yaml | grep -i password
+  password: V003VXhSRWxmMXYzalBXMg==
+
+ubuntu@ip-172-31-3-93:~/argocd$ echo "V003VXhSRWxmMXYzalBXMg==" | base64 -d
+WM7UxRElf1v3jPW2
+
+use username as : admin for login
+
 <img width="1577" height="562" alt="image" src="https://github.com/user-attachments/assets/a956bba4-fafc-4d80-97e1-9b47102d8db0" />
+<img width="975" height="486" alt="image" src="https://github.com/user-attachments/assets/0e92faf2-a462-4380-846e-f181ec831f24" />
+<img width="975" height="407" alt="image" src="https://github.com/user-attachments/assets/08a18f97-905d-4de9-8533-00ea71f150c0" />
+<img width="974" height="831" alt="image" src="https://github.com/user-attachments/assets/91fdb349-02bd-4d34-943c-fbfb6410362b" />
+<img width="775" height="828" alt="image" src="https://github.com/user-attachments/assets/b5eb53ee-997f-468f-8aad-f56e885bbb29" />
+<img width="975" height="301" alt="image" src="https://github.com/user-attachments/assets/5e5c95ac-2983-49a8-be1f-29e14c21b06d" />
+<img width="975" height="345" alt="image" src="https://github.com/user-attachments/assets/09df6dfd-50ec-456b-8b51-5e03fee9c32c" />
+<img width="975" height="86" alt="image" src="https://github.com/user-attachments/assets/c29f7d5d-a56b-442e-ad46-f05974ac7b75" />
+<img width="975" height="220" alt="image" src="https://github.com/user-attachments/assets/9426c4f2-f545-447a-ab7a-f8fd56a7c257" />
+<img width="975" height="452" alt="image" src="https://github.com/user-attachments/assets/ebd04cc7-ff5c-4702-b7fa-9308e891bef3" />
+
+
+
+
+
+
+
+
+
+
